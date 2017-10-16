@@ -1,6 +1,6 @@
 # Concordion Element Syntax
 
-This is some syntax for contributing to Concordion's output HTML in your own extensions.
+This project provides syntax for contributing to Concordion's output HTML in your own extensions.
 
 To use it, add com.casualmiracles.concordion.elementSyntax.ElementSyntaxExtension as an
 extension to your test fixture class. e.g.
