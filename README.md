@@ -1,5 +1,7 @@
 # Concordion Element Syntax
 
+[![Build Status](https://travis-ci.org/lancewalton/concordion-element-syntax.png?branch=master)](https://travis-ci.org/lancewalton/concordion-element-syntax)
+
 This project provides syntax for contributing to Concordion's output HTML in your own extensions.
 
 To use it, add `com.casualmiracles.concordion.elementSyntax.ElementSyntaxExtension` as an
