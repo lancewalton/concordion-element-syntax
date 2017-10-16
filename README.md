@@ -12,7 +12,8 @@ import com.casualmiracles.concordion.elementSyntax.ElementSyntaxExtension
 @Extension(classOf[ElementSyntaxExtension])
 ```
 
-This extension adds no commands. The reason for registering it as an extension is to allow the css to be added.
+This extension adds no commands. The reason for registering it as an extension is to allow the css included in the jar file
+to be included in the HTML output.
 
 The output HTML also needs [Bootstrap](http://getbootstrap.com). This is not included in this
 distribution. The distribution has been tested with Bootstrap version v4.0.0-beta. The
