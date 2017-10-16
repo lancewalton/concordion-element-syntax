@@ -2,7 +2,7 @@
 
 This project provides syntax for contributing to Concordion's output HTML in your own extensions.
 
-To use it, add com.casualmiracles.concordion.elementSyntax.ElementSyntaxExtension as an
+To use it, add `com.casualmiracles.concordion.elementSyntax.ElementSyntaxExtension` as an
 extension to your test fixture class. e.g.
 
 ```scala
@@ -28,7 +28,7 @@ import org.concordion.api.ConcordionResources
 )
 ```
 
-This assumes bootstrap.min.css and bootstrap.min.js are on the classpath in the 'web' directory. e.g. if you have the
+This assumes `bootstrap.min.css` and `bootstrap.min.js` are on the classpath in the `web` directory. e.g. if you have the
 conventional project structure:
 
 ```
@@ -42,7 +42,7 @@ project
       scala
 ```
 
-Then the project/src/test/resources directory will have a web subdirectory containining bootstrap.min.css and bootstrap.min.js.
+Then the `project/src/test/resources` directory will have a web subdirectory containining `bootstrap.min.css` and `bootstrap.min.js`.
 
 Altogether, it should look like this:
 
