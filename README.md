@@ -6,7 +6,10 @@ To use it, add com.casualmiracles.concordion.elementSyntax.ElementSyntaxExtensio
 extension to your test fixture class. e.g.
 
 ```scala
-@org.concordion.api.extension.Extension(classOf[com.casualmiracles.concordion.elementSyntax.ElementSyntaxExtension])
+import org.concordion.api.extension.Extension
+import com.casualmiracles.concordion.elementSyntax.ElementSyntaxExtension
+
+@Extension(classOf[ElementSyntaxExtension])
 ```
 
 This extension adds no commands. The reason for registering it as an extension is to allow the css to be added.
@@ -16,11 +19,29 @@ distribution. The distributions has been tested with Bootstrap version v4.0.0-be
 Bootstrap resources also need to be added to the test fixture class:
 
 ```scala
-@org.concordion.api.ConcordionResources(
+import org.concordion.api.ConcordionResources
+
+@ConcordionResources(
   Array("/web/bootstrap.min.css",
         "/web/bootstrap.min.js")
 )
 ```
+
+This assumes bootstrap.min.css and bootstrap.min.js are on the classpath in the 'web' directory. e.g. if you have the
+conventional project structure:
+
+```
+project
+  src
+    main
+      resources
+      scala
+    test
+      resources
+      scala
+```
+
+Then the project/src/test/resources directory will have a web subdirectory containining bootstrap.min.css and bootstrap.min.js.
 
 Altogether, it should look like this:
 
