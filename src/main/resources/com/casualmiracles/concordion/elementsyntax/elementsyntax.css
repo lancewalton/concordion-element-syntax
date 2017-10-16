@@ -1,0 +1,30 @@
+.element-syntax-two-col {
+  display: table;
+  width: 100%
+}
+
+.element-syntax-two-col > div.element-syntax-equal-width {
+  display: table-cell;
+  width: 50%;
+  border: 1px solid #C3D9FF;
+  padding: 6px 16px 6px 16px;
+}
+
+.element-syntax-column-title {
+  font-size: 12pt;
+  margin-bottom: 12px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul.element-syntax-notes {
+  padding-left: 30px;
+}
+
+pre {
+  margin: 10px;
+}
+
+.failure pre {
+  padding: 9.5px;
+}

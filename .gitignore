@@ -1,0 +1,13 @@
+.idea
+
+production/src/main/web/concordion
+
+it-will-all-be-fine.iml
+
+project/project
+target
+
+.DS_Store
+
+*.log
+/production/src/main/resources/web/concordion
