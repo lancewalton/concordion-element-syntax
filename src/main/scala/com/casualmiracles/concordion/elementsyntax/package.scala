@@ -51,7 +51,7 @@ package object elementsyntax {
                   right: Element ⇒ Unit,
                   fs: (ChildElement ⇒ Unit)*): ParentElement =
       div(_.styles("element-syntax-two-col"),
-        lift(fs: _*),
+        liftElementUpdates(fs: _*),
         _.div(_.styles("element-syntax-equal-width"), left(_)),
         _.div(_.styles("element-syntax-equal-width"), right(_)))
 
@@ -136,6 +136,6 @@ package object elementsyntax {
                         fs: (ChildElement ⇒ Unit)*): ParentElement =
       create0(tag, f :: fs.toList: _*)
 
-    def lift(fs: (ChildElement ⇒ Unit)*): ChildElement ⇒ Unit = e ⇒ fs.foreach(_(e))
+    def liftElementUpdates(fs: (ChildElement ⇒ Unit)*): ChildElement ⇒ Unit = e ⇒ fs.foreach(_(e))
   }
 }

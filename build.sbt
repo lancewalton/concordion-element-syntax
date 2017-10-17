@@ -2,7 +2,7 @@ val buildSettings: Seq[Setting[_]] = Defaults.coreDefaultSettings ++ Seq[Setting
   organization := "com.casualmiracles",
   name := "concordion-element-syntax",
   version := "1.0",
-  scalaVersion := "2.12.3",
+  scalaVersion := "2.12.2",
   scalaBinaryVersion := "2.12",
   scalacOptions := Seq(
     "-language:_",
