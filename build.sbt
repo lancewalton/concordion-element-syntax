@@ -14,7 +14,6 @@ val buildSettings: Seq[Setting[_]] = Defaults.coreDefaultSettings ++ Seq[Setting
     "-Yno-adapted-args",
     "-Ywarn-dead-code",
     "-Ywarn-numeric-widen",
-//    "-Ywarn-value-discard",
     "-Xfuture",
     "-Ywarn-unused-import")
 )
