@@ -14,7 +14,7 @@ Publish Snapshots to sonatype
   In both cases use:
   
 ```
-$ sbt publish-signed'
+$ sbt publish-signed
 ```
 
 Release to sonatype
@@ -30,6 +30,6 @@ Release to sonatype
   1. If that succeeds, select the release again and click 'Release'
   1. Wait ...
   1. Keep checking the Activity tab to see if there are any problems
-  1. Look for the release in https://oss.sonatype.org/content/repositories/releases/com/casualmiracles/concordion-element-synax_2.12
+  1. Look for the release in https://oss.sonatype.org/content/repositories/releases/com/casualmiracles/concordion-element-syntax_2.12
   1. Bump the release version up with -SNAPSHOT extension
 
