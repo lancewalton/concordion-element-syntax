@@ -124,6 +124,18 @@ package object elementsyntax {
           )
         )
 
+    def table(columnNames: List[String], rows: List[List[String]]): Unit =
+      create1(
+        "table",
+        e ⇒ {
+          e.addStyleClass("table table-bordered")
+          e.create1("tr", e ⇒ columnNames.map(name ⇒ e.create1("th", _.text(name))))
+          rows.foreach { r =>
+            e.create1("tr", e ⇒ r.map(v ⇒ e.create1("td", _.text(v))))
+          }
+        }
+      )
+
     def create0(tag: String, fs: (ChildElement ⇒ Unit)*): ParentElement = {
       val child = new Element(tag)
       fs.foreach { _(child) }
@@ -131,7 +143,7 @@ package object elementsyntax {
       element
     }
 
-    private def create1(tag: String,
+    def create1(tag: String,
                         f: ChildElement ⇒ Unit,
                         fs: (ChildElement ⇒ Unit)*): ParentElement =
       create0(tag, f :: fs.toList: _*)

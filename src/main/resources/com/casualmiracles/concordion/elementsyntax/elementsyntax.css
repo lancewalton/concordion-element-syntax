@@ -21,6 +21,10 @@ ul.element-syntax-notes {
   padding-left: 30px;
 }
 
+p, li {
+  max-width: 100%;
+}
+
 pre {
   margin: 10px;
 }
